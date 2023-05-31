@@ -40,7 +40,7 @@ interface BannerInterface {
          *
          * @param banner The banner that was dismissed
          */
-        fun onDismiss(banner: Banner?)
+        fun onDismiss(banner: Banner)
     }
 
     /**
@@ -52,6 +52,6 @@ interface BannerInterface {
          *
          * @param banner The banner that is shown
          */
-        fun onShow(banner: Banner?)
+        fun onShow(banner: Banner)
     }
 }
