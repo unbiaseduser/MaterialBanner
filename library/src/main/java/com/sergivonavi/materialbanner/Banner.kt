@@ -854,6 +854,7 @@ class Banner @JvmOverloads constructor(
      *
      * @see setBannerVisibility
      */
+    @JvmOverloads
     fun show(delay: Long = 0) {
         if (mScheduledShow || (!mScheduledDismiss && mIsAnimating)) return
         mScheduledShow = true
@@ -901,6 +902,7 @@ class Banner @JvmOverloads constructor(
      *
      * @see setBannerVisibility
      */
+    @JvmOverloads
     fun dismiss(delay: Long = 0) {
         if (mScheduledDismiss || (!mScheduledShow && mIsAnimating)) return
         mScheduledDismiss = true
